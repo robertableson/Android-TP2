@@ -1,5 +1,6 @@
 package com.example.rob.tp2androidrobertableson;
 
+import android.content.Intent;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.util.Log;
@@ -14,15 +15,18 @@ public class MainActivity extends AppCompatActivity {
     }
 
     public void openClickWar(View view){
-        Log.d("allo", "click war");
+        Intent clickWarIntent = new Intent(this, ClickWar.class);
+        startActivity(clickWarIntent);
     }
 
     public void openLaPetiteDevinette(View view){
-        Log.d("allo", "la petite devinette");
+        Intent petiteDevinetteIntent = new Intent(this, PetiteDevinette.class);
+        startActivity(petiteDevinetteIntent);
     }
 
     public void openLuniversMeRepondra(View view){
-        Log.d("allo", "Allo L'univers!!!!!!!!!!!!!");
+        Intent reponseUniversIntent = new Intent(this, ReponseUnivers.class);
+        startActivity(reponseUniversIntent);
     }
 
     public void gameOver(View view){

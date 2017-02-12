@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_click_war"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context="com.example.rob.tp2androidrobertableson.ClickWar">
+
+    <TextView
+        android:text="Préparez-vous à cliquer!"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="12dp"
+        android:id="@+id/lblInfo"
+        android:textSize="22sp"
+        android:textAllCaps="false"
+        android:textStyle="normal|bold" />
+
+    <TextView
+        android:text="Timer ici"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/lblInfo"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="19dp"
+        android:id="@+id/lblTimer"
+        android:textStyle="normal|bold"
+        android:textSize="30sp" />
+
+    <Button
+        android:text="Cliquez-ici pour débuter!"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/btnClickWar"
+        android:textSize="14sp"
+        android:height="100sp"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="136dp"
+        android:textAllCaps="false" />
+
+    <TextView
+        android:text="Nombre clics ici"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/btnClickWar"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="64dp"
+        android:id="@+id/lblNombreClics"
+        android:textSize="40sp"
+        android:textStyle="normal|bold" />
+</RelativeLayout>
